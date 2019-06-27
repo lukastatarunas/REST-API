@@ -3,6 +3,7 @@ const request = require('request')
 
 const app = express()
 
+app.get('/', (req, res) => { res.send('It is working!') } )
 app.get('/api/v1/lrtlive',  (req, res) => {
 res.header('Access-Control-Allow-Origin', '*')
 res.header('Access-Control-Allow-Headers', 'x-requested-with, x-requested-by')
